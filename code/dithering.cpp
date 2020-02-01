@@ -28,10 +28,9 @@ int main()
     {
         for(int x=0; x<n; x++)
         {
-            //printf("%d %d --- ",x,y);
             int i = x % n;
             int j = y % n;
-            output[y][x] = (real[y][x] > dither[i][j])? 255 : 0;
+            output[x][y] = (real[x][y] > dither[i][j])? 255 : 0;
         }
     }
     printf("Done\n");
