@@ -22,13 +22,16 @@ for y in range (0,n):
 
 fig = plt.figure()
 
-plt.subplot(1, 3, 1)
+ax1 = plt.subplot(1, 3, 1)
+ax1.title.set_text('Real Image(300x300)')
 plt.imshow(real, cmap="gray")
 
-plt.subplot(1, 3, 2)
+ax2 = plt.subplot(1, 3, 2)
+ax2.title.set_text('Dithering Matrix(3x3)')
 plt.imshow(dither, cmap="gray")
 
-plt.subplot(1, 3, 3)
+ax3 = plt.subplot(1, 3, 3)
+ax3.title.set_text('Resultant Image(300x300)')
 plt.imshow(res, cmap="gray")
 
 plt.show()
